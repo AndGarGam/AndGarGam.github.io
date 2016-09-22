@@ -12,6 +12,7 @@ h2 {
 }
   
 .nav {
+  display: inline;
   margin: 50px;
   background: #14f4da;
 }
@@ -65,16 +66,10 @@ h2 {
   color: white;
 }
 
-.home {
-  margin=top: 100px;
-  font-size: 80px;
-  color: #44d6e6;
-}
-
-.About Me {
+.p {
   margin: 50px;
   font-size: 16px;
-  color: black;
+  color: red;
   text-align: left;
   text-align: justify;
   line-height: 30px;
