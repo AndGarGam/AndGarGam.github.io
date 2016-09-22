@@ -34,7 +34,7 @@ h2 {
 .nav ul li a,visited {
   display:block;
   color:blue;
-  padding:15px;
+  padding:10px;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ h2 {
   color: #44d6e6;
 }
 
-.about {
+.About Me {
   margin: 50px;
   font-size: 16px;
   color: black;
