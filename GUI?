@@ -1,0 +1,73 @@
+from tkinter import *
+from tkinter import IntVar
+import tkinter
+from tkinter import messagebox
+
+top = tkinter.Tk()
+
+def HelloCallBack():
+    messagebox.showinfo( "Recognition Sytem", "Welcome! Take a picture and see what the code declares it to be!")
+
+B = tkinter.Button(top, text ="Recognition System", command = HelloCallBack)
+
+B.pack()
+
+def ImageTaken():
+    messagebox.showinfo( "Image", "Image Taken.")
+
+B = tkinter.Button(top, text ="Take Picture", command = ImageTaken)
+
+B.pack( side = RIGHT )
+
+
+L1 = Label(top, text="Use")
+L1.pack( side = Right)
+E1 = Entry(top, bd =5)
+E1.pack( side = RIGHT )
+
+def donothing():
+   filewin = Toplevel(root)
+   button = Button(filewin, text="Do nothing button")
+   button.pack()
+
+root = Tk()
+   
+menubar = Menu(root)
+filemenu = Menu(menubar, tearoff=0)
+filemenu.add_command(label="New", command=donothing)
+filemenu.add_command(label="Open", command=donothing)
+filemenu.add_command(label="Save", command=donothing)
+filemenu.add_command(label="Save as...", command=donothing)
+filemenu.add_command(label="Close", command=donothing)
+
+filemenu.add_separator()
+
+filemenu.add_command(label="Exit", command=root.quit)
+menubar.add_cascade(label="File", menu=filemenu)
+editmenu = Menu(menubar, tearoff=0)
+editmenu.add_command(label="Undo", command=donothing)
+
+editmenu.add_separator()
+
+editmenu.add_command(label="Cut", command=donothing)
+editmenu.add_command(label="Copy", command=donothing)
+editmenu.add_command(label="Paste", command=donothing)
+editmenu.add_command(label="Delete", command=donothing)
+editmenu.add_command(label="Select All", command=donothing)
+
+menubar.add_cascade(label="Edit", menu=editmenu)
+helpmenu = Menu(menubar, tearoff=0)
+helpmenu.add_command(label="Help Index", command=donothing)
+helpmenu.add_command(label="About...", command=donothing)
+menubar.add_cascade(label="Help", menu=helpmenu)
+
+root.config(menu=menubar)
+
+C = tkinter.Canvas(top, bg="blue", height=250, width=300)
+
+coord = 10, 50, 240, 210
+arc = C.create_arc(coord, start=0, extent=150, fill="red")
+
+C.pack( side = LEFT )
+
+root.mainloop()
