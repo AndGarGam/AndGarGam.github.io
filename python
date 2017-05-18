@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Andres' Site</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+			<h2>Andres' Site</h2>
+	<div class="nav">
+			<ul>
+				<li><a href="/">Home</a></li>
+					<li><a href="/About Me.html">About Me</a></li>
+					<li><a What I learned About HTML and Python>What I Learned About HTML and Python</a>
+						<ul>
+							<li><a href="/HTML">HTML</a></li>
+							<li><a href="/Python">Python</a></li>
+						</ul>
+					<li><a Open AI Project With Mentors>Open AI Project With Mentors</a></li>
+					<li><a My Own Open AI Project>My Own Open AI Project</a></li>
+						<ul>
+							<li><a href="/Project Proposal">Project Proposal</a></li>
+							<li><a href="/Project Parts and Budget">Project Parts and Budget</a></li>
+							<li><a href="/Project Schedule">Project Schedule</a></li>
+							<li><a href="/Project Updates">Project Updates</a></li>
+							<li><a href="/Final Project and Write Up">Final Project and Write Up</a></li>
+						</ul>
+					<li><a Photos></a></li>
+			</ul>
+	</div>
+	<h3>What I learned about Python</h3>
+		<div class="About Me"><p> Python is a programming language used for programming. Compared to other
+    languages such as C, Python is relatively simpler such that it is more beginner friendly. Learning about Python when I was making my first
+    GUI, I learned that there were many wrappings and add-ons that supported Python such as Anaconda and Cython which are meant to integrate
+    C++ or C# with Python. Despite this, programming is far from easy, as there are many setbacks that require
+    patience, determination, and focus to overcome those obstacles. Although I did not utilize python for my project,
+    it was still fun trying to assemble a GUI and have widgets that could be utilized for your project, 
+    as well as trying to fix the errors that ocurred and the search and satisfaction that came from fixing those errors.
+		</p></div>
+	</body>
